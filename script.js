@@ -8,14 +8,14 @@ getFromLocalStorage();
 calculateTotal();
 
 container.addEventListener('click', function(e) {
-   if(e.target.classList.contains('seat') && !e.target.classList.contains('reserved')) {
-       e.target.classList.toggle('selected');
-       calculateTotal()      
+    if(e.target.classList.contains('seat') && !e.target.classList.contains('reserved')) {
+        e.target.classList.toggle('selected');
+        calculateTotal()
     }
 });
 
 select.addEventListener('change', function(e) {
-    calculateTotal();  
+    calculateTotal();
 });
 
 function calculateTotal() {
